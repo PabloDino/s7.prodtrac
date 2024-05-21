@@ -16,25 +16,31 @@
 
 <resources>
 
-    <style name="Widget.Inventory.ListItemTextView" parent="Widget.MaterialComponents.TextView">
+    <style name="Widget.Product.ListItemTextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
     </style>
 
-    <style name="Widget.Inventory.TextView" parent="Widget.MaterialComponents.TextView">
+    <style name="Widget.Product.TextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:textSize">16sp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
     </style>
 
-    <style name="Widget.Inventory.Header" parent="Widget.MaterialComponents.TextView">
+    <style name="Widget.Measure.TextView" parent="Widget.MaterialComponents.TextView">
+    <item name="android:textSize">12sp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+</style>
+
+    <style name="Widget.Product.Header" parent="Widget.MaterialComponents.TextView">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAppearance">?attr/textAppearanceOverline</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline1</item>
     </style>
 
     <style name="Divider">
@@ -43,7 +49,7 @@
         <item name="android:background">?android:attr/listDivider</item>
     </style>
 
-    <style name="Widget.Inventory.TextInputLayout.OutlinedBox"
+    <style name="Widget.Product.TextInputLayout.OutlinedBox"
         parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeErrorColor">@color/red_700</item>
         <item name="errorIconTint">@color/red_700</item>

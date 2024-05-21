@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-include ':app'
-rootProject.name = "InventoryApp"
+include ':models', ':app'
+rootProject.name = "ProdMan"

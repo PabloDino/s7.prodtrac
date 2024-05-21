@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2021 The Android Open Source Project.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="0dp">
+
+
+
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="New hazard"
+
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/red_x"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bggray1"
+        android:inputType="text"/>
+
+    <ImageView
+        android:id="@+id/round_x"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/roundx2"
+        tools:srcCompat="@drawable/roundx2" />
+
+
+
+
+    <ImageView
+        android:id="@+id/red_x"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toEndOf="@+id/round_x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/redx6"
+        tools:srcCompat="@drawable/redx6" />
+
+
+
+
+    <TextView
+        android:id="@+id/hazard_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+         android:text="@string/sample_version"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/round_x"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:text="@string/sample_version" />
+
+
+
+    <CheckBox
+        android:id="@+id/measure_name"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toEndOf="@+id/red_x"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="CheckBox" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/plus_blue"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toEndOf="@+id/hazard_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plusblue"
+        tools:srcCompat="@drawable/plusblue" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
